@@ -21,9 +21,7 @@ export const captureAuthState = async () => {
         context = await browser.newContext({ storageState: storageStateFile })
     else context = await browser.newContext()
 
-    const page = await context.newPage()
-    await page.setViewportSize({ width: 1512, height: 982 })
-    await sleep(500)
+    await context.newPage()
 
     logger.info(
         'A browser window has been opened. Please log into your account.'

@@ -1,4 +1,4 @@
 {
     "$schema": "https://unpkg.com/knip@5/schema.json",
-    "ignoreDependencies": ["npm-check-updates"]
+    "ignoreDependencies": ["npm-check-updates", "pino-pretty"]
 }

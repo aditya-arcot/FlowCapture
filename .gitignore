@@ -1,6 +1,12 @@
 .DS_Store
 
 node_modules/
+output/
+sandbox/
 
+# symlink to logs folder
+logs
+
+authState.json
 .env*
 !.env.example

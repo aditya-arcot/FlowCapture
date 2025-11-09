@@ -155,7 +155,7 @@ const handleInputAction = async (page: Page, step: ActionStep) => {
     for (const { name, locator } of strategies) {
         try {
             logger.trace('Trying to fill using %s strategy', name)
-            await locator.first().fill(step.value)
+            await locator.first().fill(step.value, { timeout: 2000 })
             logger.debug('Filled input using %s strategy', name)
             returned = true
             return
